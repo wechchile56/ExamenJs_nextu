@@ -6,7 +6,7 @@
 // para ejecutar el programa
 // ************************************
 
-var $Juego = new Array[6][6];
+
 
 // function hacer el random de las imagen del juego;
 // funcione cuenta con un arreglo donde se encuentra cargado los ubicacion
@@ -28,11 +28,20 @@ function llenado(){
 }
 
 // animacion de titulo
+var color= false;
 
 function AnimacionTitulo(){
-	$('main-titulo').animate({
-		opacity:'1';
-		color: yellow;
+     
 
-	},3000)
+     if (color ==  false){
+     	$(".main-titulo").css("color","red");
+     	color=true;
+     }else{
+     	$(".main-titulo").css("color","yellow");	
+     	color= false;
+     }
+
+     setTimeout("AnimacionTitulo()",1000);
 }
+
+
