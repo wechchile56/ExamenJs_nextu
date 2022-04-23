@@ -7,6 +7,9 @@
 // ************************************
 
 
+// declaracion de variable globales
+
+var movimientos =0;
 
 // function hacer el random de las imagen del juego;
 // funcione cuenta con un arreglo donde se encuentra cargado los ubicacion
